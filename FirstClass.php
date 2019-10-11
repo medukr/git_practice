@@ -1,11 +1,12 @@
 <?php
-/**
- * Created by andrii
- * Date: 11.10.19
- * Time: 09:34
- */
 
 class FirstClass
 {
+
+    private $some_data;
+
+    public function getSomeData(){
+        return $this->some_data;
+    }
 
 }
