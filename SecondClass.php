@@ -12,6 +12,8 @@ class SecondClass
 
         $fobj = new FirstClass();
 
+        $fobj->setSomeData('hello world');
+
         return $fobj->getSomeData();
     }
 }
