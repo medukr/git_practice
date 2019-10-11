@@ -8,11 +8,17 @@ include 'FirstClass.php';
 
 class SecondClass
 {
+    private $message;
+
+    public function __construct($message)
+    {
+        $this->message = $message;
+    }
+
+
     public function getData(){
 
-        $fobj = new FirstClass();
-
-        $fobj->setSomeData('hello world');
+        $fobj = new FirstClass($this->message);
 
         return $fobj->getSomeData();
     }
