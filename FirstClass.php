@@ -9,4 +9,8 @@ class FirstClass
         return $this->some_data;
     }
 
+    public function setSomeData($data){
+        $this->some_data = $data;
+    }
+
 }
